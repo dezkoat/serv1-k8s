@@ -18,7 +18,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app: nodejs-app
+    app: nodejs-downstream-app
   ports:
     - protocol: TCP
       port: 80
