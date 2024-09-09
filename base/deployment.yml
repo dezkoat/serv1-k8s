@@ -12,10 +12,8 @@ spec:
       labels:
         app: nodejs-app
     spec:
-      imagePullSecrets:
-      - name: regcred
       containers:
       - name: nodejs-app
-        image: localhost:5000/serv1:v1
+        image: dezkoat13/serv1:v1
         ports:
         - containerPort: 3000
