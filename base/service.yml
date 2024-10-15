@@ -8,8 +8,8 @@ spec:
     app: nodejs-app
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 3001
+      port: 81
+      targetPort: 3000
 ---
 apiVersion: v1
 kind: Service
