@@ -17,23 +17,3 @@ spec:
         image: dezkoat13/serv1:v4
         ports:
         - containerPort: 3000
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: nodejs-downstream-app
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: nodejs-downstream-app
-  template:
-    metadata:
-      labels:
-        app: nodejs-downstream-app
-    spec:
-      containers:
-      - name: nodejs-downstream-app
-        image: dezkoat13/serv3:v4
-        ports:
-        - containerPort: 3000
